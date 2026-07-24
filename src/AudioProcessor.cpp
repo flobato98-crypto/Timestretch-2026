@@ -1,4 +1,5 @@
 #include "AudioProcessor.h"
+#include "signalsmith/stretch/Stretch.h"
 
 
 AudioProcessor::AudioProcessor()
