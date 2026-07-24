@@ -4,7 +4,7 @@
 
 AudioProcessor::AudioProcessor()
 {
-
+signalsmith::stretch::SignalsmithStretch stretch;
 }
 
 
