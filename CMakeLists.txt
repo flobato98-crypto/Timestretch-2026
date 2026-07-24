@@ -18,6 +18,10 @@ include_directories(
     external/libsndfile/include
 )
 
+link_directories(
+    external/libsndfile/lib
+)
+
 add_executable(Timestretch2026
     src/main.cpp
     src/MainWindow.cpp
