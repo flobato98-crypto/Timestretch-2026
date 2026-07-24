@@ -18,6 +18,8 @@ add_executable(Timestretch2026
     src/main.cpp
     src/MainWindow.cpp
     src/MainWindow.h
+    src/AudioProcessor.cpp
+    src/AudioProcessor.h
 )
 
 target_link_libraries(Timestretch2026
