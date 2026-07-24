@@ -29,6 +29,7 @@ add_executable(Timestretch2026
 target_link_libraries(Timestretch2026
     PRIVATE
     Qt6::Widgets
+    sndfile
 )
 
 if(WIN32)
