@@ -41,3 +41,9 @@ if(WIN32)
         WIN32_EXECUTABLE TRUE
     )
 endif()
+
+add_custom_command(TARGET Timestretch2026 POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy
+    ${CMAKE_SOURCE_DIR}/external/libsndfile/bin/sndfile.dll
+    $<TARGET_FILE_DIR:Timestretch2026>
+)
