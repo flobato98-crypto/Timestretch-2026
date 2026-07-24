@@ -5,7 +5,18 @@
 
 AudioProcessor::AudioProcessor()
 {
-signalsmith::stretch::SignalsmithStretch stretch;
+    SF_INFO info{};
+
+    SNDFILE* file = sf_open(
+        "test.wav",
+        SFM_READ,
+        &info
+    );
+
+    if(file)
+    {
+        sf_close(file);
+    }
 }
 
 
