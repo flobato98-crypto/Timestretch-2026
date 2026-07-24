@@ -13,6 +13,9 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
+include_directories(
+    external/signalsmith-stretch
+)
 
 add_executable(Timestretch2026
     src/main.cpp
