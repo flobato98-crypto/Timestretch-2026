@@ -364,3 +364,7 @@ void MainWindow::saveSettings()
         "overlap",
         overlapSpin->value());
 }
+~MainWindow()
+{
+    saveSettings();
+}
